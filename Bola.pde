@@ -1,4 +1,4 @@
-class Ball
+class Bola
 {
   int x;
   int y;
@@ -9,7 +9,7 @@ class Ball
   int g;
   int b;
 
-  Ball(int xloc, int yloc, int d, int red, int green, int blue)
+  Bola(int xloc, int yloc, int d, int red, int green, int blue)
   {
     x=xloc;
     y=yloc;
@@ -54,29 +54,29 @@ class Ball
     }
   
    // VERIFICAR TODOS OS TIJOLOS
-   for (int i=0; i<Bricks.size(); i++)
+   for (int i=0; i<Tijolos.size(); i++)
    {
-     Brick b=Bricks.get(i);
-     if ((x>=b.x) && (x<=b.x+BRICKW) && (y==b.y+BRICKH)) // FUNDO DO TIJOLO
+     Tijolo b=Tijolos.get(i);
+     if ((x>=b.x) && (x<=b.x+TijoloW) && (y==b.y+TijoloH)) // FUNDO DO TIJOLO
      {
-       Bricks.remove(i);
+       Tijolos.remove(i);
        offsetY=-offsetY;
      }
      else
-       if ((x>=b.x) && (x<=b.x+BRICKW) && (y==b.y)) // TOPO DO TIJOLO
+       if ((x>=b.x) && (x<=b.x+TijoloW) && (y==b.y)) // TOPO DO TIJOLO
        {
-         Bricks.remove(i);
+         Tijolos.remove(i);
          offsetY=-offsetY;
        }
        else
-         if ((y>=b.y) && (y<=b.y+BRICKH) && (x==b.x-diam)) // ESQUERDA DO TIJOLO
-         {  Bricks.remove(i);
+         if ((y>=b.y) && (y<=b.y+TijoloH) && (x==b.x-diam)) // ESQUERDA DO TIJOLO
+         {  Tijolos.remove(i);
            offsetX=-offsetX;
          }
          else
-           if ((y>=b.y) && (y<=b.y+BRICKH) && (x==b.x+BRICKW)) // DIREITA DO TIJOLO
+           if ((y>=b.y) && (y<=b.y+TijoloH) && (x==b.x+TijoloW)) // DIREITA DO TIJOLO
            {
-             Bricks.remove(i);
+             Tijolos.remove(i);
              offsetX=-offsetX;
            }
    }

@@ -1,4 +1,4 @@
-class Bat
+class Bastao
 {
   int y;
   int w;
@@ -7,7 +7,7 @@ class Bat
   int g;
   int b;
   
-  Bat(int yloc, int width, int height, int red, int green, int blue)
+  Bastao(int yloc, int width, int height, int red, int green, int blue)
   {
 
     y=yloc;

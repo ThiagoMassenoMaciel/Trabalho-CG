@@ -1,4 +1,4 @@
-class Brick
+class Tijolo
 {
   int x;
   int y;
@@ -6,7 +6,7 @@ class Brick
   int g;
   int b;
   
-  Brick(int xpos, int ypos)
+  Tijolo(int xpos, int ypos)
   {
     x=xpos;
     y=ypos;
@@ -20,6 +20,6 @@ class Brick
     strokeWeight(3);
     fill(r,g,b);
     stroke(255,255,255);
-    rect(x,y,BRICKW, BRICKH);
+    rect(x,y,TijoloW, TijoloH);
   }
 }
