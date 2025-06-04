@@ -8,8 +8,8 @@
 ---
 
 ## 📸 Demonstração
-
-🚧 *(Adicione aqui screenshots ou gifs do jogo rodando para enriquecer sua apresentação)*
+🚧![vid-1](https://github.com/user-attachments/assets/db1c56f4-99b6-40d8-9008-33268d989993)
+🚧![vid-2](https://github.com/user-attachments/assets/ecaa90c9-849c-4f11-b5c2-b08725fbf75d)
 
 ---
 
